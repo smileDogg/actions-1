@@ -1,25 +1,28 @@
-name: My First Workflow
+name: Generate ASCII Artwork
 
 on: push
 
 jobs:
-    first_job:
+    ascii_job:
         runs-on: ubuntu-latest
         steps:
         - name: Checkout Repo
           uses: actions/checkout@v6
         
-        - name: Install Cowsay Program
-          run: sudo apt-get install cowsay -y
+        - name: Welcome message and List and Read file
+          run: |
+            echo "My first Github Actions Job"
+            ls
+            cat README.md
         
-        - name: Execute Cowsay CMD
+        - name: Generate ASCII Artwork
           run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
         
-        - name: Test File Exists
-          run: grep -i "dragon" dragon.txt
+          #- name: Welcome message
+        #  run: echo "My first Github Actions Job"
         
-        - name: Read file
-          run: cat dragon.txt
+        #- name: List files
+        #  run: ls
         
-        - name: List Repo Files
-          run: ls -ltra
+        #- name: Read file
+        #  run: cat README.md
