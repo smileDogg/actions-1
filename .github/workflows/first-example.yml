@@ -12,11 +12,25 @@ jobs:
         - name: Welcome message and List and Read file
           run: |
             echo "My first Github Actions Job"
+            echo
+            echo "veamos nuestro current path"
+            pwd
+            echo
+            echo "ahora vamos a listar"
             ls
+            echo
+            echo "ahora vamos a ver lo que hay en el README.md"
             cat README.md
+            echo
+            echo "ahora vamos a movernos un nivel hacia arriba"
+            cd ..
+            echo "veamos nuestro current path"
+            pwd
+            echo "ahora vamos a listar"
+            ls
         
-        - name: Generate ASCII Artwork
-          run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
+        #- name: Generate ASCII Artwork
+        #  run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
         
           #- name: Welcome message
         #  run: echo "My first Github Actions Job"
