@@ -18,18 +18,24 @@ jobs:
             echo
             echo "ahora vamos a listar"
             ls -la
+            echo
             echo "ahora vamos a revisar el tree"
             tree -a
-            
+            echo
             echo "ahora vamos a ver lo que hay en el README.md"
             cat README.md
             echo
             echo "ahora vamos a movernos al home"
             cd
+            echo
             echo "veamos nuestro current path"
             pwd
+            echo
             echo "ahora vamos a listar"
-            ls
+            ls -la
+            echo
+            echo "ahora vamos a revisar el tree"
+            tree -a
         
         #- name: Generate ASCII Artwork
         #  run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
