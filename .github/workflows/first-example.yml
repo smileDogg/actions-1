@@ -17,13 +17,15 @@ jobs:
             pwd
             echo
             echo "ahora vamos a listar"
-            ls
-            echo
+            ls -la
+            echo "ahora vamos a revisar el tree"
+            tree -a
+            
             echo "ahora vamos a ver lo que hay en el README.md"
             cat README.md
             echo
-            echo "ahora vamos a movernos un nivel hacia arriba"
-            cd ..
+            echo "ahora vamos a movernos al home"
+            cd
             echo "veamos nuestro current path"
             pwd
             echo "ahora vamos a listar"
