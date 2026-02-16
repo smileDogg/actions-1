@@ -25,3 +25,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo this workflow/job/step is executed for event type -  ${{ github.event_name }}
+
+# link (Skipping workflow runs): https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs?versionId=free-pro-team%40latest&productId=actions&restPage=reference%2Cworkflows-and-actions%2Ccontexts
