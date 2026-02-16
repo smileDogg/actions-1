@@ -25,3 +25,9 @@ jobs:
         env: 
           SECRET_CONTEXT: ${{ toJson(secrets) }}
         run: echo "$SECRET_CONTEXT"
+      - name: Display runner arch
+        env: 
+          SECRET_CONTEXT: ${{ runner.arch }}
+        run: echo "$SECRET_CONTEXT"
+      - name: Display runner arch 2
+        run: echo ${{ runner.arch }}
